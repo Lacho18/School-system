@@ -10,9 +10,9 @@ export default function MainPage() {
       <div>
         <p>You are:</p>
         <div>
-          <button onClick={() => navigate("/login/student")}>Student</button>
-          <button onClick={() => navigate("/login/teacher")}>Teacher</button>
-          <button onClick={() => navigate("/login/administrator")}>
+          <button onClick={() => navigate("/login/students")}>Student</button>
+          <button onClick={() => navigate("/login/teachers")}>Teacher</button>
+          <button onClick={() => navigate("/login/administrators")}>
             Administrator
           </button>
         </div>
