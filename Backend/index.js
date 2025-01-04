@@ -11,6 +11,7 @@ app.use(bodyParser.json());
 
 app.use('/login', require('./routes/LoginRoute'));
 app.use('/user', require('./routes/UserRoute'));
+app.use('/grade', require('./routes/GradesRoute'));
 
 app.listen(PORT, () => {
     console.log("Server running on port " + PORT);

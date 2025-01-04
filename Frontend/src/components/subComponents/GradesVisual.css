@@ -1,0 +1,26 @@
+.table {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    padding: 15px;
+    border: 7px solid black;
+    border-radius: 18px;
+    width: 1000px;
+    background-color: rgb(211, 232, 248);
+}
+
+.line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px 5px;
+}
+
+line>div {
+    font-size: 1.2em;
+}
+
+.titleLine>div {
+    font-weight: bold;
+}

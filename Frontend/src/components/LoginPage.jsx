@@ -46,9 +46,9 @@ export default function LoginPage() {
         <div className="inputField">
           <label htmlFor="username">
             Enter your{" "}
-            {type === "student"
+            {type === "students"
               ? "Fak. number"
-              : type === "teacher"
+              : type === "teachers"
               ? "teacher number"
               : "administrator ID"}
           </label>
