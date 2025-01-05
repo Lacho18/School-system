@@ -1,14 +1,19 @@
 import axios from "axios";
 import { useState } from "react";
 import SpecialtiesData from "./subComponents/SpecialtiesData";
+import GradesVisual from "./subComponents/GradesVisual";
 
 export default function TeacherPage() {
   const [specialty, setSpecialty] = useState("");
   const [error, setError] = useState("");
   const [specialtyData, setSpecialtyData] = useState([]);
+  const [inputField, setInputField] = useState("");
+  const [singleStudentGrades, setSingleStudentGrades] = useState([]);
 
   async function specialtiesGradesHandler(specialty) {
     try {
+      setSingleStudentGrades([]);
+      setInputField("");
       const response = await axios.get(
         "http://localhost:3000/specialties/?specialty=" + specialty
       );
@@ -31,9 +36,12 @@ export default function TeacherPage() {
     try {
       setSpecialtyData([]);
       const response = await axios.get(
-        "http://localhost:3000/user/?data=" +
-          encodeURIComponent(JSON.stringify(data))
+        "http://localhost:3000/grade/?id=" + inputField
       );
+
+      if (response.status === 200) {
+        setSingleStudentGrades(response.data.grades);
+      }
     } catch (err) {
       setError(err.response.data.message);
       setTimeout(() => {
@@ -61,10 +69,14 @@ export default function TeacherPage() {
             type="text"
             name="fakNumber"
             placeholder="Student Fak. number"
+            onChange={(e) => setInputField(e.target.value)}
           />
         </div>
-        <button>See results</button>
+        <button onClick={getSpecificStudentData}>See results</button>
       </div>
+      {singleStudentGrades.length > 0 && (
+        <GradesVisual grades={singleStudentGrades} />
+      )}
       <div>
         {specialty !== "" ? (
           <SpecialtiesData

@@ -19,7 +19,6 @@ const login = asyncHandler(async (req, res) => {
 
     try {
         const result = await client.query(query, [username, password]);
-        console.log(result.rows[0]);
 
         // Check if a user was found
         if (result.rows.length > 0) {
