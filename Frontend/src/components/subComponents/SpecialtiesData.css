@@ -1,0 +1,28 @@
+.teacher_table {
+    display: grid;
+    width: 1250px;
+    border: 7px solid black;
+    border-radius: 18px;
+    grid-template-columns: 1fr;
+    background-color: lightblue;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 15px;
+}
+
+.group>div {
+    display: flex;
+    font-size: 1.25em;
+    border: 2px solid black;
+}
+
+.group>div>p {
+    width: 33.3%;
+    border-right: 2px solid black;
+    padding: 10px;
+    color: black;
+}
