@@ -9,7 +9,7 @@ import "./styles/mainStyle.css";
 
 function App() {
   return (
-    <div>
+    <div>     
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/login/:type" element={<LoginPage />} />
