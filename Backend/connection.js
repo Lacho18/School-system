@@ -4,7 +4,7 @@ require('dotenv').config();
 // Validate environment variables
 if (!process.env.DATABASE_PASSWORD) {
     console.error("DATABASE_PASSWORD is not set in the .env file");
-    process.exit(1);
+    process.exit(1);   
 }
 
 const client = new Client({
