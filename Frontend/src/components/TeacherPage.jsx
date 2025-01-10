@@ -11,8 +11,8 @@ export default function TeacherPage() {
   const [singleStudentGrades, setSingleStudentGrades] = useState([]);
 
   async function specialtiesGradesHandler(specialty) {
-    try {
-      setSingleStudentGrades([]);
+    try { 
+      setSingleStudentGrades([]);    
       setInputField("");
       const response = await axios.get(
         "http://localhost:3000/specialties/?specialty=" + specialty

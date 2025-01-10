@@ -1,27 +1,10 @@
-/*const { Client } = require('pg');
-require('dotenv').config();
-
-const client = new Client({
-    host: "localhost",
-    user: "postgres",
-    port: 5432,
-    password: process.env.DATABASE_PASSWORD,
-    database: "school_system"
-});
-
-client.connect()
-    .then(() => console.log("Connection complete"))
-    .catch(err => console.log("Connection error: " + err.stack));
-
-module.exports = client;*/
-
 const { Client } = require('pg');
 require('dotenv').config();
 
 // Validate environment variables
 if (!process.env.DATABASE_PASSWORD) {
     console.error("DATABASE_PASSWORD is not set in the .env file");
-    process.exit(1);
+    process.exit(1);   
 }
 
 const client = new Client({
