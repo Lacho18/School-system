@@ -18,7 +18,7 @@ This is a full stack application that describes a system used in schools. THe sy
 The idea of the system is to give web based interface, which is intuitive for work. It gives always and immediately information and students and teachers can always access the information they desire. <br>
 The application uses PostgreSQL as database. In it there are tables for all three rows - student, teacher, administrator. All three tables have different fields that describe every row. There are tables for student grades, all specialties and all subject in the school or university. <br>
 The architecture: <br>
-![UML Diagram](https://drive.google.com/file/d/1xRTD_x1tovKhNc0QKVRCy2WsyGLCL3BG/view?usp=drive_link)
+![UML Diagram](https://drive.google.com/file/d/1xRTD_x1tovKhNc0QKVRCy2WsyGLCL3BG/view?usp=sharing)
 
 The structure of the database is
 
