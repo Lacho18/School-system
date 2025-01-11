@@ -6,7 +6,7 @@ School management system
 
 ## React, React Router, Axios, Node.js, Express.js, PostgreSQL
 
-# Description
+# Description 
 
 This is a full stack application that describes a system used in schools. THe system has functionalities as:
 
