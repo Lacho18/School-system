@@ -13,7 +13,7 @@ This is a full stack application that describes a system used in schools. THe sy
 1. Students with their accounts can see all their grades and statistics for their success in the school
 2. Teachers can see grades of every student in the school
 3. Teachers can see grades of all students in specialty where the teacher teaches
-4. Administrators can make statistics with every grade in the school
+4. Administrators can make statistics with every grade in the school 
 
 The idea of the system is to give web based interface, which is intuitive for work. It gives always and immediately information and students and teachers can always access the information they desire. <br>
 The application uses PostgreSQL as database. In it there are tables for all three rows - student, teacher, administrator. All three tables have different fields that describe every row. There are tables for student grades, all specialties and all subject in the school or university. <br>
